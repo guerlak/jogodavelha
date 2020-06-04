@@ -31,7 +31,7 @@ public class Board {
 			}
 			UI.printNewLine();
 			if (x < mat.length - 1) {
-				UI.printText("---------");
+				UI.printText("-----------");
 			}
 		}
 	}
@@ -59,11 +59,6 @@ public class Board {
 			throw new InvalidMoveException("ERRO: Indice maior do que a tabela.");
 		}
 		
-		/*
-		 * System.out.println(checkRows(player)); System.out.println(checkCols(player));
-		 * System.out.println(checkDiagonalOne(player));
-		 * System.out.println(checkDiagonalTwo(player));
-		 */
 
 		return checkRows(player) || checkCols(player) || checkDiagonalOne(player) || checkDiagonalTwo(player);
 	}
