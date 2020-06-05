@@ -26,12 +26,12 @@ public class Board {
 			for (int y = 0; y < mat[x].length; y++) {
 				UI.printTextWithNoNewLine(String.valueOf(mat[x][y]));
 				if (y < mat[x].length - 1) {
-					UI.printTextWithNoNewLine(" | ");
+					UI.printTextWithNoNewLine("  |  ");
 				}
 			}
 			UI.printNewLine();
 			if (x < mat.length - 1) {
-				UI.printText("-----------");
+				UI.printText("-------------");
 			}
 		}
 	}

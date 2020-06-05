@@ -71,10 +71,10 @@ public class Game{
 		Integer score = scoreManager.getScore(player);
 		
 		if(score != null) {
-			UI.printText("O jogador " + player.getName() + " tem " + score + " vitória(s).");
+			UI.printText("O jogador '" + player.getName() + "' tem " + score + " vitória(s).");
 		}
 		
-		UI.printText("O jogador " + name + " foi criado e jogará com " + Constants.PLAYERS_SYMBOL[index]);
+		UI.printText("O jogador '" + name + "' foi criado e jogará com " + Constants.PLAYERS_SYMBOL[index]);
 		return player;
 	}
 	
@@ -90,7 +90,7 @@ public class Game{
 			return players[0];
 		}
 		currentPlayerIndex = (currentPlayerIndex + 1) % players.length;
-		System.out.println(currentPlayerIndex);
+
 		return players[currentPlayerIndex];
 	}
 	

@@ -15,7 +15,7 @@ public class Player {
 	}
 
 	private Move inputMove() throws InvalidMoveException {
-		String moveStr = UI.readInput("Jogador '" + name + " => ");
+		String moveStr = UI.readInput("Sua vez, '" + name + " => ");
 		Move m = new Move(moveStr);
 		return m;
 	}

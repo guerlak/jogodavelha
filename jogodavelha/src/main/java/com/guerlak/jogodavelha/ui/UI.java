@@ -25,6 +25,7 @@ public class UI {
 	}
 	
 	public static String readInput(String text) {
+		System.out.println();
 		printTextWithNoNewLine(text + " "); 
 		String str = in.nextLine();
 		return str;
